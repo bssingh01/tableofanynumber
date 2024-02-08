@@ -3,7 +3,7 @@ let div = document.querySelector("div");
 
 function printTable() {
   let n = prompt("Enter the number:");
-  h1.innerText = h1.innerText + n + ":";
+  h1.innerText = `Table of ${n}:`;
   for (let i = 1; i <= 10; i++) {
     const entry = document.createElement("h3");
     div.appendChild(entry);
