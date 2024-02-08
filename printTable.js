@@ -5,14 +5,22 @@ let button = document.querySelector("button");
 
 let n = parseInt(num.innerText);
 
-function printTable() {
+// function printTable() {
+//   heading.innerText = `Table of ${n}:`;
+//   for (let i = 1; i <= 10; i++) {
+//     const entry = document.createElement("h3");
+//     div.appendChild(entry);
+//     entry.innerText = `${n * i}`;
+//     console.log(n * i);
+//   }
+// }
+
+button.addEventListener("click", function () {
   heading.innerText = `Table of ${n}:`;
   for (let i = 1; i <= 10; i++) {
     const entry = document.createElement("h3");
     div.appendChild(entry);
     entry.innerText = `${n * i}`;
-    // console.log(n * i);
+    console.log(n * i);
   }
-}
-
-button.addEventListener("click", printTable);
+});
