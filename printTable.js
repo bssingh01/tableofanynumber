@@ -1,9 +1,12 @@
-let h1 = document.querySelector("h1");
+let heading = document.querySelector("heading");
 let div = document.querySelector("div");
+let num = document.querySelector("input");
+let button = document.querySelector("button");
+
+let n = parseInt(num.innerText);
 
 function printTable() {
-  let n = prompt("Enter the number:");
-  h1.innerText = `Table of ${n}:`;
+  heading.innerText = `Table of ${n}:`;
   for (let i = 1; i <= 10; i++) {
     const entry = document.createElement("h3");
     div.appendChild(entry);
@@ -12,4 +15,4 @@ function printTable() {
   }
 }
 
-printTable();
+button.addEventListener("click", printTable);
