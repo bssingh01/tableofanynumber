@@ -4,6 +4,7 @@ let num = document.querySelector("input");
 let button = document.querySelector("button");
 
 let n = parseInt(num.innerText);
+console.log(num);
 
 // function printTable() {
 //   heading.innerText = `Table of ${n}:`;
