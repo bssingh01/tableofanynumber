@@ -1,22 +1,10 @@
-let heading = document.querySelector("heading");
+let heading = document.querySelector(".heading");
 let div = document.querySelector("div");
 let num = document.querySelector("input");
 let button = document.querySelector("button");
 
-let n = parseInt(num.innerText);
-console.log(num);
-
-// function printTable() {
-//   heading.innerText = `Table of ${n}:`;
-//   for (let i = 1; i <= 10; i++) {
-//     const entry = document.createElement("h3");
-//     div.appendChild(entry);
-//     entry.innerText = `${n * i}`;
-//     console.log(n * i);
-//   }
-// }
-
-button.addEventListener("click", function () {
+function printTable() {
+let n = num.value;
   heading.innerText = `Table of ${n}:`;
   for (let i = 1; i <= 10; i++) {
     const entry = document.createElement("h3");
@@ -24,4 +12,6 @@ button.addEventListener("click", function () {
     entry.innerText = `${n * i}`;
     console.log(n * i);
   }
-});
+}
+
+button.addEventListener("click", printTable);
