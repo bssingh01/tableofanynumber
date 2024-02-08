@@ -4,7 +4,8 @@ let num = document.querySelector("input");
 let button = document.querySelector("button");
 
 function printTable() {
-let n = num.value;
+  div.innerText = "";
+  let n = num.value;
   heading.innerText = `Table of ${n}:`;
   for (let i = 1; i <= 10; i++) {
     const entry = document.createElement("h3");
