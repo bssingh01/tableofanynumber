@@ -16,3 +16,8 @@ function printTable() {
 }
 
 button.addEventListener("click", printTable);
+num.addEventListener("keyup", (event)=>{
+  if(event == "Enter"){
+    printTable();
+  }
+});
